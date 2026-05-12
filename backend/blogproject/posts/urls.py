@@ -5,7 +5,9 @@ from .views import (
     get_post,
     create_posts,
     update_post,
-    delete_post
+    delete_post,
+    register,
+    login
 )
 
 urlpatterns = [
@@ -14,4 +16,6 @@ urlpatterns = [
     path('posts/create/', create_posts),
     path('posts/update/<int:pk>/', update_post),
     path('posts/delete/<int:pk>/', delete_post),
+    path('register/',register),
+    path('login/', login),
 ]
